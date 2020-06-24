@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h1= title
+    form(action="/form_data", method="post")
+        div
+            label(for="say")
+            input(type="text" name="say" value="hi")
+        br
+        div
+            label(for="to")
+            input(type="text" name="to" value="Express forms")
+        br
+        button(type="submit") Send my greeting
+    
